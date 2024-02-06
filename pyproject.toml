@@ -10,7 +10,7 @@ description = "Maintain a dynamic benchmarks table and choose the best fit algor
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    'pandas = 2.1.2',
+    'pandas ~= 2.1.2',
     'git+https://github.com/virinci/cryterion.git@main',
 ]
 classifiers = [
