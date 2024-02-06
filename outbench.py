@@ -31,7 +31,7 @@ class Outbench:
 
         self.data[algo] = new_row
 
-    def _rank(self):
+    def _rank(self, verbose):
         df = pd.DataFrame(list(self.data.values()))
         # print(df)
         for item in self.eval_c.keys():
@@ -49,8 +49,9 @@ class Outbench:
                 .sum(axis=1)
             )
         df.sort_values("Final Score", ascending=False)
-        # print(df)
+        if verbose:
+            print(df)
         return df.loc[0]["algo"]
 
-    def pick_best(self) -> str:
-        return self._rank()
+    def pick_best(self, verbose=False) -> str:
+        return self._rank(verbose=verbose)
