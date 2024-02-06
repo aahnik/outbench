@@ -9,6 +9,10 @@ authors = [{ name = "aahnik", email = "daw@aahnik.dev" }]
 description = "Maintain a dynamic benchmarks table and choose the best fit algorithm based on current state."
 readme = "README.md"
 requires-python = ">=3.8"
+dependencies = [
+    'pandas = 2.1.2',
+    'git+https://github.com/virinci/cryterion.git@main',
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
