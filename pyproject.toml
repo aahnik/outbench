@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "outbench"
-version = "0.0.1"
+version = "0.0.2"
 authors = [{ name = "aahnik", email = "daw@aahnik.dev" }]
 description = "Maintain a dynamic benchmarks table and choose the best fit algorithm based on current state."
 readme = "README.md"
